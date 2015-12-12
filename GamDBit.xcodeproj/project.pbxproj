@@ -12,6 +12,8 @@
 		4934CC161C1C37430006298D /* ODBRunningGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934CC151C1C37430006298D /* ODBRunningGameViewController.m */; };
 		4934CC191C1C3C580006298D /* ODBSpinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934CC181C1C3C580006298D /* ODBSpinnerViewController.m */; };
 		4934CC1C1C1C3DA00006298D /* ODBFinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934CC1B1C1C3DA00006298D /* ODBFinalViewController.m */; };
+		4934CC1E1C1C51620006298D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4934CC1D1C1C51620006298D /* Media.xcassets */; };
+		4934CC201C1C51830006298D /* laMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4934CC1F1C1C51830006298D /* laMedia.xcassets */; };
 		49C899EE1C1BAC950009445D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899ED1C1BAC950009445D /* main.m */; };
 		49C899F11C1BAC950009445D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899F01C1BAC950009445D /* AppDelegate.m */; };
 		49C899F41C1BAC950009445D /* ODBTrainNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899F31C1BAC950009445D /* ODBTrainNumberViewController.m */; };
@@ -32,6 +34,8 @@
 		4934CC181C1C3C580006298D /* ODBSpinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBSpinnerViewController.m; sourceTree = "<group>"; };
 		4934CC1A1C1C3DA00006298D /* ODBFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBFinalViewController.h; sourceTree = "<group>"; };
 		4934CC1B1C1C3DA00006298D /* ODBFinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBFinalViewController.m; sourceTree = "<group>"; };
+		4934CC1D1C1C51620006298D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		4934CC1F1C1C51830006298D /* laMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = laMedia.xcassets; sourceTree = "<group>"; };
 		49C899E91C1BAC950009445D /* GamDBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamDBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C899ED1C1BAC950009445D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49C899EF1C1BAC950009445D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 		49C899EB1C1BAC950009445D /* GamDBit */ = {
 			isa = PBXGroup;
 			children = (
+				4934CC1F1C1C51830006298D /* laMedia.xcassets */,
+				4934CC1D1C1C51620006298D /* Media.xcassets */,
 				49C899EF1C1BAC950009445D /* AppDelegate.h */,
 				49C899F01C1BAC950009445D /* AppDelegate.m */,
 				4934CC111C1C26D20006298D /* ODBBetInputViewController.h */,
@@ -164,8 +170,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4934CC201C1C51830006298D /* laMedia.xcassets in Resources */,
 				49C899FF1C1BAC950009445D /* LaunchScreen.storyboard in Resources */,
 				49C899FC1C1BAC950009445D /* Assets.xcassets in Resources */,
+				4934CC1E1C1C51620006298D /* Media.xcassets in Resources */,
 				49C899F71C1BAC950009445D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
