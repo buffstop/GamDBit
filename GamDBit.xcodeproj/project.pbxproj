@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4934CC101C1C1EC30006298D /* ODBTrainNumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934CC0F1C1C1EC30006298D /* ODBTrainNumberTableViewCell.m */; };
 		4934CC131C1C26D20006298D /* ODBBetInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934CC121C1C26D20006298D /* ODBBetInputViewController.m */; };
+		4934CC161C1C37430006298D /* ODBRunningGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934CC151C1C37430006298D /* ODBRunningGameViewController.m */; };
+		4934CC191C1C3C580006298D /* ODBSpinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934CC181C1C3C580006298D /* ODBSpinnerViewController.m */; };
+		4934CC1C1C1C3DA00006298D /* ODBFinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934CC1B1C1C3DA00006298D /* ODBFinalViewController.m */; };
 		49C899EE1C1BAC950009445D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899ED1C1BAC950009445D /* main.m */; };
 		49C899F11C1BAC950009445D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899F01C1BAC950009445D /* AppDelegate.m */; };
 		49C899F41C1BAC950009445D /* ODBTrainNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899F31C1BAC950009445D /* ODBTrainNumberViewController.m */; };
@@ -23,6 +26,12 @@
 		4934CC0F1C1C1EC30006298D /* ODBTrainNumberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBTrainNumberTableViewCell.m; sourceTree = "<group>"; };
 		4934CC111C1C26D20006298D /* ODBBetInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBBetInputViewController.h; sourceTree = "<group>"; };
 		4934CC121C1C26D20006298D /* ODBBetInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBBetInputViewController.m; sourceTree = "<group>"; };
+		4934CC141C1C37430006298D /* ODBRunningGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBRunningGameViewController.h; sourceTree = "<group>"; };
+		4934CC151C1C37430006298D /* ODBRunningGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBRunningGameViewController.m; sourceTree = "<group>"; };
+		4934CC171C1C3C580006298D /* ODBSpinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBSpinnerViewController.h; sourceTree = "<group>"; };
+		4934CC181C1C3C580006298D /* ODBSpinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBSpinnerViewController.m; sourceTree = "<group>"; };
+		4934CC1A1C1C3DA00006298D /* ODBFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBFinalViewController.h; sourceTree = "<group>"; };
+		4934CC1B1C1C3DA00006298D /* ODBFinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBFinalViewController.m; sourceTree = "<group>"; };
 		49C899E91C1BAC950009445D /* GamDBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamDBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C899ED1C1BAC950009445D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49C899EF1C1BAC950009445D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +79,8 @@
 				49C899F01C1BAC950009445D /* AppDelegate.m */,
 				4934CC111C1C26D20006298D /* ODBBetInputViewController.h */,
 				4934CC121C1C26D20006298D /* ODBBetInputViewController.m */,
+				4934CC141C1C37430006298D /* ODBRunningGameViewController.h */,
+				4934CC151C1C37430006298D /* ODBRunningGameViewController.m */,
 				49C899F21C1BAC950009445D /* ODBTrainNumberViewController.h */,
 				49C899F31C1BAC950009445D /* ODBTrainNumberViewController.m */,
 				4934CC0E1C1C1EC30006298D /* ODBTrainNumberTableViewCell.h */,
@@ -80,6 +91,10 @@
 				49C89A001C1BAC950009445D /* Info.plist */,
 				49C899F81C1BAC950009445D /* GamDBit.xcdatamodeld */,
 				49C899EC1C1BAC950009445D /* Supporting Files */,
+				4934CC171C1C3C580006298D /* ODBSpinnerViewController.h */,
+				4934CC181C1C3C580006298D /* ODBSpinnerViewController.m */,
+				4934CC1A1C1C3DA00006298D /* ODBFinalViewController.h */,
+				4934CC1B1C1C3DA00006298D /* ODBFinalViewController.m */,
 			);
 			path = GamDBit;
 			sourceTree = "<group>";
@@ -162,10 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4934CC191C1C3C580006298D /* ODBSpinnerViewController.m in Sources */,
 				49C899FA1C1BAC950009445D /* GamDBit.xcdatamodeld in Sources */,
+				4934CC1C1C1C3DA00006298D /* ODBFinalViewController.m in Sources */,
 				49C899F41C1BAC950009445D /* ODBTrainNumberViewController.m in Sources */,
 				4934CC101C1C1EC30006298D /* ODBTrainNumberTableViewCell.m in Sources */,
 				49C899F11C1BAC950009445D /* AppDelegate.m in Sources */,
+				4934CC161C1C37430006298D /* ODBRunningGameViewController.m in Sources */,
 				49C899EE1C1BAC950009445D /* main.m in Sources */,
 				4934CC131C1C26D20006298D /* ODBBetInputViewController.m in Sources */,
 			);

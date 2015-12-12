@@ -30,11 +30,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-r7-5qo">
-                                                    <rect key="frame" x="13" y="13" width="317" height="64"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-r7-5qo">
+                                                    <rect key="frame" x="13" y="13" width="357" height="64"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -76,11 +76,182 @@
                     <connections>
                         <outlet property="tableview" destination="eQb-wE-pTU" id="5Me-SF-EMl"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="5ko-sw-lvp"/>
+                        <segue destination="xU9-be-947" kind="show" identifier="show bet input" id="uGj-eV-LUS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035.5" y="285.5"/>
+            <point key="canvasLocation" x="793.5" y="292.5"/>
+        </scene>
+        <!--Bet Input View Controller-->
+        <scene sceneID="Xtw-N3-TYA">
+            <objects>
+                <viewController id="xU9-be-947" customClass="ODBBetInputViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kZW-vO-re7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aa0-Y8-gIA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="31u-Rx-Oda">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="minutes" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SLL-cS-hU4">
+                                <rect key="frame" x="139" y="123" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taq-g5-mXp">
+                                <rect key="frame" x="84" y="197" width="207" height="65"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Wette abgeben">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="betButtonPressed:" destination="xU9-be-947" eventType="touchUpInside" id="vzo-dN-5I5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="taq-g5-mXp" firstAttribute="centerX" secondItem="31u-Rx-Oda" secondAttribute="centerX" id="4bF-0p-zDK"/>
+                            <constraint firstItem="SLL-cS-hU4" firstAttribute="centerX" secondItem="31u-Rx-Oda" secondAttribute="centerX" id="cNN-Hp-g0D"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="minutesInput" destination="SLL-cS-hU4" id="3Z0-vr-u9d"/>
+                        <outlet property="view" destination="31u-Rx-Oda" id="J9O-2o-KKt"/>
+                        <segue destination="BES-6K-yZe" kind="show" identifier="show game" id="GCB-06-MyS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3i-5L-sJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257.5" y="292.5"/>
+        </scene>
+        <!--Running Game View Controller-->
+        <scene sceneID="cAB-7t-6PR">
+            <objects>
+                <viewController id="BES-6K-yZe" customClass="ODBRunningGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MEj-c6-9Ju"/>
+                        <viewControllerLayoutGuide type="bottom" id="dwX-AG-ZuR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cJS-Xg-WGE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="min val" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fk-vV-3QG">
+                                <rect key="frame" x="134" y="150" width="107" height="54"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dein Tip:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1N-Ta-RnQ">
+                                <rect key="frame" x="101" y="105" width="160" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e1-tY-3iF">
+                                <rect key="frame" x="97" y="366" width="181" height="60"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Zug ist Da!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="arrivedPressed:" destination="BES-6K-yZe" eventType="touchUpInside" id="0q0-Pa-q8a"/>
+                                    <segue destination="cZD-kR-K9j" kind="show" id="cxM-Kq-gM5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="8Fk-vV-3QG" id="vcl-G1-A1Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="piv-HC-25d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780.5" y="258.5"/>
+        </scene>
+        <!--Spinner View Controller-->
+        <scene sceneID="wc7-R2-Ph4">
+            <objects>
+                <viewController id="cZD-kR-K9j" customClass="ODBSpinnerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PTv-L0-xzP"/>
+                        <viewControllerLayoutGuide type="bottom" id="pNh-mb-kjq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QMx-X9-OdP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aQC-20-Qpm">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <animations/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aQC-20-Qpm" firstAttribute="centerY" secondItem="QMx-X9-OdP" secondAttribute="centerY" id="emc-N8-CPM"/>
+                            <constraint firstItem="aQC-20-Qpm" firstAttribute="centerX" secondItem="QMx-X9-OdP" secondAttribute="centerX" id="tDb-lB-pXB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="z0b-9g-FeD" kind="show" identifier="show final" id="D5E-jc-PIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eT7-K0-fVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2267.5" y="263.5"/>
+        </scene>
+        <!--Final View Controller-->
+        <scene sceneID="BPD-uO-Lcy">
+            <objects>
+                <viewController id="z0b-9g-FeD" customClass="ODBFinalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TLt-rX-vEg"/>
+                        <viewControllerLayoutGuide type="bottom" id="o8w-vx-6Dl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YH6-IZ-7dL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gewonnen!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOt-wL-gVb">
+                                <rect key="frame" x="64" y="183" width="246" height="81"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nT-m6-DPe">
+                                <rect key="frame" x="112" y="538" width="151" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Nochmal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="againPressed:" destination="z0b-9g-FeD" eventType="touchUpInside" id="ndF-AG-jL2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqB-aM-goD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2754.5" y="263.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WRi-4n-Bzw">

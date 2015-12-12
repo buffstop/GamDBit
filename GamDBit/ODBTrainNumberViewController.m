@@ -17,6 +17,7 @@ static NSString * const cellId = @"train number cell";
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (strong, nonatomic) NSArray *trainNumbers;
 @property (strong, nonatomic) NSArray *colors;
+@property (nonatomic) NSInteger lastSelectedRow;
 @end
 
 @implementation ODBTrainNumberViewController
@@ -54,8 +55,8 @@ static NSString * const cellId = @"train number cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ODBBetInputViewController *betVC = [ODBBetInputViewController new];
-    //TODO: set trainnumber
-    [self.navigationController pushViewController:betVC animated:YES];
+    self.lastSelectedRow = indexPath.row;
+    [self performSegueWithIdentifier:@"show bet input" sender:self];
 }
 
 #pragma mark - Other
@@ -70,21 +71,40 @@ static NSString * const cellId = @"train number cell";
                           @"ICE 1090",
                           @"RB 1090",
                           @"ICE 1090"];
-    self.colors = @[[UIColor greenColor],
-                    [UIColor redColor],
-                    [UIColor yellowColor],
-                    [UIColor purpleColor],
-                    [UIColor grayColor],
-                    [UIColor blueColor],
-                    [UIColor greenColor],
-                    [UIColor redColor]];
+    CGFloat zwei55 = 255.0;
+    self.colors = @[[UIColor colorWithRed:217.0 / zwei55 green:91.0 / zwei55 blue:67.0 / zwei55 alpha:1.0],
+                    [UIColor colorWithRed:192.0 / zwei55 green:41.0 / zwei55 blue:66.0 / zwei55 alpha:1.0],
+                    [UIColor colorWithRed:84.0 / zwei55 green:36 / zwei55 blue:55.0 / zwei55 alpha:1.0],
+                    [UIColor colorWithRed:83.0 / zwei55 green:119.0 / zwei55 blue:122.0 / zwei55 alpha:1.0],
+                    [UIColor colorWithRed:22.0 / zwei55 green:147.0 /zwei55 blue:167.0 / zwei55 alpha:1.0],
+                    [UIColor colorWithRed:94.0 / zwei55 green:65.0 / zwei55 blue:47.0 / zwei55 alpha:1.0],
+                    [UIColor colorWithRed:96 / zwei55 green:120 / zwei55 blue:72 / zwei55 alpha:1.0],
+                    [UIColor colorWithRed:78 / zwei55 green:57 / zwei55 blue:93 / zwei55 alpha:1.0]];
+}
+
+#pragma mark - Other
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ODBBetInputViewController *dvc = segue.destinationViewController;
+    dvc.trainNum = self.trainNumbers[self.lastSelectedRow];
+    dvc.backColor = self.colors[self.lastSelectedRow];
 }
 
 #pragma - Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     [self setup];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
+    self.navigationController.navigationBar.translucent = YES;
 }
 
 
