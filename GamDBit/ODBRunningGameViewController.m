@@ -18,7 +18,7 @@
 
 - (IBAction)arrivedPressed:(UIButton *)sender
 {
-    //TODO:
+    //TODO: nothing todo :-)
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -52,11 +52,11 @@
     
     self.timeLabel.text = [NSString stringWithFormat:@"%@ min", [self.time stringValue]];
     
-    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
-                                                                      style:UIBarButtonItemStylePlain
-                                                                     target:nil
-                                                                     action:nil];
-    self.navigationItem.leftBarButtonItem = newBackButton;
+//    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
+//                                                                      style:UIBarButtonItemStylePlain
+//                                                                     target:nil
+//                                                                     action:nil];
+//    self.navigationItem.leftBarButtonItem = newBackButton;
 }
 
 
