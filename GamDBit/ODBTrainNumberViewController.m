@@ -6,13 +6,13 @@
 //  Copyright © 2015 Andreas Buff. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ODBTrainNumberViewController.h"
 
-@interface ViewController ()
+@interface ODBTrainNumberViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ODBTrainNumberViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		49C899EE1C1BAC950009445D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899ED1C1BAC950009445D /* main.m */; };
 		49C899F11C1BAC950009445D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899F01C1BAC950009445D /* AppDelegate.m */; };
-		49C899F41C1BAC950009445D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899F31C1BAC950009445D /* ViewController.m */; };
+		49C899F41C1BAC950009445D /* ODBTrainNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C899F31C1BAC950009445D /* ODBTrainNumberViewController.m */; };
 		49C899F71C1BAC950009445D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C899F51C1BAC950009445D /* Main.storyboard */; };
 		49C899FA1C1BAC950009445D /* GamDBit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49C899F81C1BAC950009445D /* GamDBit.xcdatamodeld */; };
 		49C899FC1C1BAC950009445D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C899FB1C1BAC950009445D /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		49C899ED1C1BAC950009445D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49C899EF1C1BAC950009445D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49C899F01C1BAC950009445D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		49C899F21C1BAC950009445D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		49C899F31C1BAC950009445D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49C899F21C1BAC950009445D /* ODBTrainNumberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODBTrainNumberViewController.h; sourceTree = "<group>"; };
+		49C899F31C1BAC950009445D /* ODBTrainNumberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODBTrainNumberViewController.m; sourceTree = "<group>"; };
 		49C899F61C1BAC950009445D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49C899F91C1BAC950009445D /* GamDBit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GamDBit.xcdatamodel; sourceTree = "<group>"; };
 		49C899FB1C1BAC950009445D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,8 +62,8 @@
 			children = (
 				49C899EF1C1BAC950009445D /* AppDelegate.h */,
 				49C899F01C1BAC950009445D /* AppDelegate.m */,
-				49C899F21C1BAC950009445D /* ViewController.h */,
-				49C899F31C1BAC950009445D /* ViewController.m */,
+				49C899F21C1BAC950009445D /* ODBTrainNumberViewController.h */,
+				49C899F31C1BAC950009445D /* ODBTrainNumberViewController.m */,
 				49C899F51C1BAC950009445D /* Main.storyboard */,
 				49C899FB1C1BAC950009445D /* Assets.xcassets */,
 				49C899FD1C1BAC950009445D /* LaunchScreen.storyboard */,
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C899FA1C1BAC950009445D /* GamDBit.xcdatamodeld in Sources */,
-				49C899F41C1BAC950009445D /* ViewController.m in Sources */,
+				49C899F41C1BAC950009445D /* ODBTrainNumberViewController.m in Sources */,
 				49C899F11C1BAC950009445D /* AppDelegate.m in Sources */,
 				49C899EE1C1BAC950009445D /* main.m in Sources */,
 			);
